@@ -22,7 +22,7 @@ jobs:
           go install golang.org/x/tools/cmd/goimports@latest
       - name: check goimports
         run: |
-          if [ -n "$(goimports -l .)"]; then
+          if [ -n "$(goimports -l .)" ]; then
             echo "Go files are not formatted. Run 'goimports -w .' to fix them."
             exit 1
           fi
