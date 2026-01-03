@@ -24,7 +24,7 @@ func TestHomeHandler(t *testing.T) {
 	}
 
 	got := string(data)
-	want := "Hello from simple API."
+	want := "Hello from simple API"
 	if got != want {
 		t.Errorf("got %v, wanted %v", got, want)
 	}

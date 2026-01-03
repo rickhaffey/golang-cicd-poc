@@ -13,9 +13,8 @@ POC project for trying out different CI/CD approaches (using GH Actions) for a G
     - [x] golangci-lint
 - [x] check formatting
     - [x] goimports
-- release support
-    - gorelease?
-    - other?
-- dependabot setup
+- [x] release support
+    - [x] gorelease?
+- [x] dependabot setup
 - changelog management
 - conventional commits ??
