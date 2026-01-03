@@ -1,0 +1,26 @@
+name: goimports
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  goimports:
+    name: check-formatting
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-go@v6
+        with:
+          go-version: stable
+      - name: check goimports
+        run: |
+          if [ -n "$(goimports -l .)"]; then
+            echo "Go files are not formatted. Run 'goimports -w .' to fix them."
+            exit 1
+          fi
+
