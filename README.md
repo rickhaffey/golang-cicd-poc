@@ -11,8 +11,8 @@ POC project for trying out different CI/CD approaches (using GH Actions) for a G
 - [x] run tests
 - [x] incorporate linting
     - [x] golangci-lint
-- check formatting
-    - sim.
+- [x] check formatting
+    - [x] goimports
 - release support
     - gorelease?
     - other?
