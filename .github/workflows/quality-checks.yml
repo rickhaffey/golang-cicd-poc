@@ -1,5 +1,5 @@
 name: Quality Checks
-
+# comment for non-impact change
 on:
   push:
     branches:
